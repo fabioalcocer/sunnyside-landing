@@ -1,0 +1,26 @@
+.cherry {
+  position: relative;
+  min-height: 90vh;
+  background-image: url("../assets/mobile/image-graphic-design.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: var(--Dark-blue-photography-text);
+}
+
+.cherry__info {
+  position: absolute;
+  bottom: 50px;
+}
+
+.cherry__title {
+  margin-bottom: 1.8rem;
+  font-size: 1.9rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+}
+
+.cherry__text {
+  padding: 0 0.4rem;
+  line-height: 1.5;
+}
