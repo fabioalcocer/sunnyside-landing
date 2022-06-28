@@ -1,6 +1,8 @@
 .hero {
   max-width: 100%;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url(../assets/mobile/image-header.jpg);
   background-position: top;
   background-size: 70vh;
@@ -22,4 +24,59 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-top: 5rem;
+}
+
+.hero__nav {
+  position: fixed;
+  width: 85%;
+  align-self: center;
+  margin-top: 6rem;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  transition: 0.4s ease;
+  z-index: 999;
+}
+
+.d-none {
+  display: none;
+}
+
+.hero__nav::before {
+  content: "";
+  position: absolute;
+  top: -33px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 33px solid transparent;
+  border-right: 30px solid #fff;
+}
+
+.hero__nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero__nav ul li {
+  list-style-type: none;
+}
+
+.hero__nav ul li a {
+  font-size: 1.3rem;
+  color: var(--Dark-grayish-blue);
+  text-decoration: none;
+}
+
+.nav__contact {
+  background-color: var(--Yellow);
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: var(--Very-dark-desaturated-blue);
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
 }

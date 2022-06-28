@@ -28,7 +28,7 @@ function App() {
       />
       <SectionCherry />
       <SectionOrange />
-      <section className="testimonials">
+      <section className="testimonials" id="testimonials">
         <h3 className="testimonials__title">Client testimonials</h3>
         <Testimonials
           image={dataTestimonials.emily.image}
